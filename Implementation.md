@@ -1,0 +1,11 @@
+# Implementation
+Our task was to remove the dependency of several files on Microsoft's Excel library by replacing the Excel code with a free, open-source spreadsheet library. The naive way to implement this was to read and understand each line of Excel code, and then write equivalent code in the open-source library. However, we chose instead to insert an additional layer of abstraction between the OMES code and the new open source library. That is, we created a library of our own, whose public interface matched Excel's, but which internally relies on the open source library. With this approach, replacing any Excel code is as simple as swapping out Excel with our library; all the syntax for the method calls remains the same.
+
+The beauty of this approach is that we never had to understand the business logic for which OMES was using Excel, which would have been a daunting and error-prone task. We only have to guarantee that our library behaves the same way as Excel, which we do through a collection of automated tests.
+
+One challenge we faced when planning our implementation was deciding which open-source spreadsheet library to use. A couple of options stood out as being extremely comprehensive, with a syntax already close to Excel's. In particular, these were Gembox and SpreadsheetGear. However, neither of those products were free, so we were forced to lower our standards. In the end we went with SpreadsheetLight, mainly because it was extremely well-documented. 
+
+While we were able to replace many of the Excel functionalities used by OMES with equivalent SpreadsheetLight functionalities, a few of them were not available in SpreadsheetLight. In particular, SpreadsheetLight does not allow for password protecting spreadsheets or saving spreadsheets to TextMSDOS format. For these functionalities, it may be necessary to introduce a new library.
+
+At the end of the day, although we will not be able to implement every Excel functionality used by OMES, we are still providing them with a powerful framework in which to fill in the remaining methods, perhaps after obtaining a more complete, paid spreadsheet editing tool. We informed our contact of the limitations of our approach, and he indicated that they were acceptable.
+
