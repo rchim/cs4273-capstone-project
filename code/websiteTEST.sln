@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite1(1)", "WebSite1\WebSite1\", "{F1EAA00F-7685-49AB-80F2-31F9E59851C6}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""
+		SccAuxPath = ""
+		SccLocalPath = ""
+		SccProvider = ""
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{f1fc8dd5-0be7-46f5-bad8-4b334fcf9e95}|ExcelWrapper.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/website1"
+		Debug.AspNetCompiler.PhysicalPath = "WebSite1\WebSite1\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\website1\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/website1"
+		Release.AspNetCompiler.PhysicalPath = "WebSite1\WebSite1\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\website1\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1186"
+		VWDDynamicPort = "false"
+		SlnRelativePath = "WebSite1\WebSite1\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelWrapper", "ExcelWrapper\ExcelWrapper.csproj", "{F1FC8DD5-0BE7-46F5-BAD8-4B334FCF9E95}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ExcelWrapperTester", "ExcelWrapperTester\ExcelWrapperTester.vbproj", "{FBD2BB2E-1A1F-4532-9053-37E9F00C3953}"
+EndProject
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "ExcelWrapperTests", "ExcelWrapperTests\ExcelWrapperTests.vbproj", "{4D9ECD25-5B1B-4DAA-A0F2-611373E4B896}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1EAA00F-7685-49AB-80F2-31F9E59851C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1EAA00F-7685-49AB-80F2-31F9E59851C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1EAA00F-7685-49AB-80F2-31F9E59851C6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1EAA00F-7685-49AB-80F2-31F9E59851C6}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{F1FC8DD5-0BE7-46F5-BAD8-4B334FCF9E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1FC8DD5-0BE7-46F5-BAD8-4B334FCF9E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1FC8DD5-0BE7-46F5-BAD8-4B334FCF9E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1FC8DD5-0BE7-46F5-BAD8-4B334FCF9E95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBD2BB2E-1A1F-4532-9053-37E9F00C3953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBD2BB2E-1A1F-4532-9053-37E9F00C3953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBD2BB2E-1A1F-4532-9053-37E9F00C3953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBD2BB2E-1A1F-4532-9053-37E9F00C3953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D9ECD25-5B1B-4DAA-A0F2-611373E4B896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D9ECD25-5B1B-4DAA-A0F2-611373E4B896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D9ECD25-5B1B-4DAA-A0F2-611373E4B896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D9ECD25-5B1B-4DAA-A0F2-611373E4B896}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F57AB3F7-62C3-4A46-BAE9-4FA98CA19465}
+	EndGlobalSection
+EndGlobal
